@@ -1,0 +1,173 @@
+[
+  {
+    "ContainingType": "JGAPI2.Controllers.BurgerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBurgerEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Burger/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[JGAPI2.Data.Models.Burger, JGAPI2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Burger"
+    ],
+    "EndpointName": "GetAllBurgers"
+  },
+  {
+    "ContainingType": "JGAPI2.Controllers.BurgerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBurgerEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Burger/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "burger",
+        "Type": "JGAPI2.Data.Models.Burger",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JGAPI2.Data.Models.Burger",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Burger"
+    ],
+    "EndpointName": "CreateBurger"
+  },
+  {
+    "ContainingType": "JGAPI2.Controllers.BurgerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBurgerEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Burger/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "burgerid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JGAPI2.Data.Models.Burger",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "Burger"
+    ],
+    "EndpointName": "GetBurgerById"
+  },
+  {
+    "ContainingType": "JGAPI2.Controllers.BurgerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBurgerEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Burger/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "burgerid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "burger",
+        "Type": "JGAPI2.Data.Models.Burger",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "Burger"
+    ],
+    "EndpointName": "UpdateBurger"
+  },
+  {
+    "ContainingType": "JGAPI2.Controllers.BurgerEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBurgerEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Burger/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "burgerid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "Burger"
+    ],
+    "EndpointName": "DeleteBurger"
+  },
+  {
+    "ContainingType": "JGAPI2.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JGAPI2.WeatherForecast, JGAPI2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
